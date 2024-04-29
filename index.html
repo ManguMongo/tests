@@ -99,9 +99,26 @@
 	<div class="wrapper">
 		
 	</div>
-	
+
 
 
 
 </body>
+
+
+<script>
+	var element = document.getElementById("MenuIcon");
+	var list = document.getElementById("TBC");
+
+	element.addEventListener("click", function() {
+		console.log("Icon clicked");
+		var style = window.getComputedStyle(list);
+		if (list.style.display === "none") {
+			list.style.display = "block";
+		} else {
+			list.style.display = "none";
+		}
+	});
+</script>
+
 </html>
